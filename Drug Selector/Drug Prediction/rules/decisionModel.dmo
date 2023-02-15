@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Drug Prediction</name>
+  <uuid>d94c0169-b281-431f-9374-a25748805167</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="drugPrediction" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Patient Detials">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData" collection="false" name="Patient Detials"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Patient Detials" typeRef="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData" collection="false" name="Patient Detials"/>
+                <output bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/Mapping.drl" kind="BusinessRule" name="Mapping"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output" collection="false" name="ML model invocation"/>
+                <output bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/Map%20Output.drl" kind="BusinessRule" name="Map Output"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult"/>
+        <informationRequirement>
+            <requiredInput href="#prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input" collection="false" name="Input mapping"/>
+                <output bomType="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="prediction/prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

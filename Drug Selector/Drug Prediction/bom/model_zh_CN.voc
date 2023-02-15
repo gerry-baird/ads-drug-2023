@@ -1,0 +1,40 @@
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error#concept.label = 输出错误
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新建 {输出错误}符合条件：{0, 代码} {1, 讯息} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.action = 设置{this}的当前 代码为{代码}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.navigation = {this} 的{代码}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.action = 设置{this}的当前 讯息为{讯息}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.navigation = {this} 的{讯息}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input#concept.label = ML 模型输入
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, age} {1, bmi} {2, bp} {3, gender} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.action = 设置{this}的当前 age为{age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.addition_setter = 加{age}到{this}的属性当前 age里
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.navigation = {this} 的{age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.subtraction_setter = 减{age}到{this}的属性当前 age里
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.action = 设置{this}的当前 bmi为{bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.addition_setter = 加{bmi}到{this}的属性当前 bmi里
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.navigation = {this} 的{bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.subtraction_setter = 减{bmi}到{this}的属性当前 bmi里
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.action = 设置{this}的当前 bp为{bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.navigation = {this} 的{bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.action = 设置{this}的当前 gender为{gender}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.navigation = {this} 的{gender}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output#concept.label = ML 模型输出
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.Output(java.lang.String,java.util.List)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, prediction} {1, probability} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.addTo_probability(java.lang.Double)#phrase.action = 在{this}的这些 probability中增加{0}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.clear_probability()#phrase.action = 删除这些 probability的 {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.action = 设置{this}的当前 错误为{错误}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.clearer = 删除当前 错误的{this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.navigation = {this} 的{错误}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.inError()#phrase.navigation = {this} 是当前 出错
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.action = 设置{this}的当前 prediction为{prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.navigation = {this} 的{prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.action = 设置{this}的当前 probability为{probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.navigation = {this} 的{probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.removeFrom_probability(java.lang.Double)#phrase.action = 从{this}的这些 probability中删除{0}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.run(gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input)#phrase.navigation = predict({0})

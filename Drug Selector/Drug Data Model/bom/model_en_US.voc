@@ -1,0 +1,26 @@
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData#concept.label = Patient Data
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.PatientData(java.lang.Long,double,java.lang.String,java.lang.String)#phrase.navigation = a new {Patient Data} where {0, age} {1, bmi} {2, bp} {3, gender}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.age#phrase.action = set the age of {this} to {age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.age#phrase.addition_setter = add {age} to the age of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.age#phrase.navigation = {age} of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bmi#phrase.action = set the bmi of {this} to {bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bmi#phrase.addition_setter = add {bmi} to the bmi of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bmi#phrase.navigation = {bmi} of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bmi#phrase.subtraction_setter = subtract {bmi} from the bmi of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bp#phrase.action = set the bp of {this} to {bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.bp#phrase.navigation = {bp} of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.gender#phrase.action = set the gender of {this} to {gender}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PatientData.gender#phrase.navigation = {gender} of {this}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult#concept.label = Predictive Model Result
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.PredictiveModelResult(java.lang.String,double)#phrase.navigation = a new {Predictive Model Result} where {0, prediction} {1, probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.prediction#phrase.action = set the prediction of {this} to {prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.prediction#phrase.navigation = {prediction} of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.probability#phrase.action = set the probability of {this} to {probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.probability#phrase.addition_setter = add {probability} to the probability of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.probability#phrase.navigation = {probability} of {this}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugdatamodel.PredictiveModelResult.probability#phrase.subtraction_setter = subtract {probability} from the probability of {this}

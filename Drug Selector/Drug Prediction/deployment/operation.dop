@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Drug Prediction">
+  <name>Drug-Prediction</name>
+  <uuid>d0c492f7-1c63-482e-81f6-b64bcdae0f63</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#d94c0169-b281-431f-9374-a25748805167"/>
+  <targetRuleProject href="../../Drug%20Prediction#dbf4dfb9-6d05-41cf-885e-5d5016f8284c"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+  <tags key="ProviderId">
+    <value><![CDATA[disconnectedProvider]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

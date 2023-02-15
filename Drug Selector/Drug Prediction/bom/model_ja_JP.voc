@@ -1,0 +1,40 @@
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error#concept.label = 出力エラー
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.action = {this}のコードを{コード}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.navigation = {this}の{コード}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.navigation = {this}の{メッセージ}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input#concept.label = ML モデル入力
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)#phrase.navigation = 新規の {ML モデル入力}ここで{0, age} {1, bmi} {2, bp} {3, gender} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.action = {this}のageを{age}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.addition_setter = {this}のageに{age}を追加する
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.navigation = {this}の{age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.subtraction_setter = {this}のageから{age}を引く
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.action = {this}のbmiを{bmi}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.addition_setter = {this}のbmiに{bmi}を追加する
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.navigation = {this}の{bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.subtraction_setter = {this}のbmiから{bmi}を引く
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.action = {this}のbpを{bp}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.navigation = {this}の{bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.action = {this}のgenderを{gender}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.navigation = {this}の{gender}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output#concept.label = ML モデル出力
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.Output(java.lang.String,java.util.List)#phrase.navigation = 新規の {ML モデル出力}ここで{0, prediction} {1, probability} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.addTo_probability(java.lang.Double)#phrase.action = {this}のprobabilityに{0}を追加
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.clear_probability()#phrase.action = {this}のprobabilityをクリアする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.action = {this}のエラーを{エラー}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.clearer = エラー{this}をクリアする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.navigation = {this}の{エラー}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.inError()#phrase.navigation = {this}はエラーの
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.action = {this}のpredictionを{prediction}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.navigation = {this}の{prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.action = {this}のprobabilityを{probability}とする
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.navigation = {this}の{probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.removeFrom_probability(java.lang.Double)#phrase.action = {this}のprobabilityから{0}を削除
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.run(gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input)#phrase.navigation = predict({0})

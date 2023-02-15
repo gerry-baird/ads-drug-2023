@@ -1,0 +1,58 @@
+
+# Term: Entrée de modèle ML
+@Entrée\ de\ modèle\ ML#gender = FEMALE
+
+# Term: Erreur de sortie
+@Erreur\ de\ sortie#gender = FEMALE
+
+# Term: Sortie de modèle ML
+@Sortie\ de\ modèle\ ML#gender = FEMALE
+
+# Term: code
+@code#gender = MALE
+
+# Term: erreur
+@erreur#gender = FEMALE
+
+# Term: message
+@message#gender = MALE
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error#concept.label = Erreur de sortie
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = une nouvelle {Erreur de sortie} tel que {0, code} {1, message} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.action = assigner le code {this,PARTITIVE_ARTICLE} à {code}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.navigation = {code} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.action = assigner le message {this,PARTITIVE_ARTICLE} à {message}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.navigation = {message} {this,PARTITIVE_ARTICLE}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input#concept.label = Entrée de modèle ML
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)#phrase.navigation = une nouvelle {Entrée de modèle ML} tel que {0, age} {1, bmi} {2, bp} {3, gender} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.action = assigner l'age {this,PARTITIVE_ARTICLE} à {age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.addition_setter = ajouter {age} à l'age {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.navigation = {age} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.subtraction_setter = retirer {age} de l'age {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.action = assigner le bmi {this,PARTITIVE_ARTICLE} à {bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.addition_setter = ajouter {bmi} au bmi {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.navigation = {bmi} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.subtraction_setter = retirer {bmi} du bmi {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.action = assigner le bp {this,PARTITIVE_ARTICLE} à {bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.navigation = {bp} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.action = assigner le gender {this,PARTITIVE_ARTICLE} à {gender}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.navigation = {gender} {this,PARTITIVE_ARTICLE}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output#concept.label = Sortie de modèle ML
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.Output(java.lang.String,java.util.List)#phrase.navigation = une nouvelle {Sortie de modèle ML} tel que {0, prediction} {1, probability} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.addTo_probability(java.lang.Double)#phrase.action = ajouter {0} à la liste des probabilitys {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.clear_probability()#phrase.action = effacer les probabilitys {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.action = assigner l'erreur {this,PARTITIVE_ARTICLE} à {erreur}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.clearer = effacer l'erreur {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.navigation = {erreur} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.inError()#phrase.navigation = {this} est en erreur
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.action = assigner le prediction {this,PARTITIVE_ARTICLE} à {prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.navigation = {prediction} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.action = assigner les probabilitys {this,PARTITIVE_ARTICLE} à {probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.navigation = {probability} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.removeFrom_probability(java.lang.Double)#phrase.action = retirer {0} de la liste des probabilitys {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.run(gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input)#phrase.navigation = predict({0})

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Mapping</name>
+  <uuid>852654f7-662a-496d-a74f-e39894c1e6ee</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+		the age is the age of 'Patient Detials' , 
+		the bmi is the bmi of 'Patient Detials' , 
+		the bp is the bp of 'Patient Detials' , 
+		the gender is the gender of 'Patient Detials' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

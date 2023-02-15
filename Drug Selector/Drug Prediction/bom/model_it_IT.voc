@@ -1,0 +1,40 @@
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error#concept.label = Errore di output
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = un nuovo {Errore di output} dove {0, codice} {1, messaggio} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.action = cambia la codice {this,PARTITIVE_ARTICLE} a {codice}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.code#phrase.navigation = {codice} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.action = cambia il messaggio {this,PARTITIVE_ARTICLE} a {messaggio}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Error.message#phrase.navigation = {messaggio} {this,PARTITIVE_ARTICLE}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input#concept.label = Input modello ML
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)#phrase.navigation = un nuovo {Input modello ML} dove {0, age} {1, bmi} {2, bp} {3, gender} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.action = cambia l'age {this,PARTITIVE_ARTICLE} a {age}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.addition_setter = aggiungere {age} a l'age {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.navigation = {age} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.age#phrase.subtraction_setter = sottrarre {age} da l'age {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.action = cambia il bmi {this,PARTITIVE_ARTICLE} a {bmi}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.addition_setter = aggiungere {bmi} a il bmi {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.navigation = {bmi} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bmi#phrase.subtraction_setter = sottrarre {bmi} da il bmi {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.action = cambia il bp {this,PARTITIVE_ARTICLE} a {bp}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.bp#phrase.navigation = {bp} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.action = cambia il gender {this,PARTITIVE_ARTICLE} a {gender}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input.gender#phrase.navigation = {gender} {this,PARTITIVE_ARTICLE}
+
+# gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output#concept.label = Output del modello ML
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.Output(java.lang.String,java.util.List)#phrase.navigation = un nuovo {Output del modello ML} dove {0, prediction} {1, probability} 
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.addTo_probability(java.lang.Double)#phrase.action = aggregare {0} in i probability {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.clear_probability()#phrase.action = cancella i probability {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.action = cambia l'errore {this,PARTITIVE_ARTICLE} a {errore}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.clearer = cancella l'errore {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.error#phrase.navigation = {errore} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.inError()#phrase.navigation = {this} è in errore
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.action = cambia il prediction {this,PARTITIVE_ARTICLE} a {prediction}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.prediction#phrase.navigation = {prediction} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.action = cambia il probability {this,PARTITIVE_ARTICLE} a {probability}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.probability#phrase.navigation = {probability} {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.removeFrom_probability(java.lang.Double)#phrase.action = togliere {0} di i probability {this,PARTITIVE_ARTICLE}
+gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Output.run(gerry.baird_uk.ibm.com.drug_project.drug_selector.drugprediction.Input)#phrase.navigation = predict({0})

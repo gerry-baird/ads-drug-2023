@@ -1,0 +1,9 @@
+{
+  "name" : "gerry.baird-uk.ibm.com/Drug-Project/Drug ML Service1676045395138",
+  "type" : "WML",
+  "description" : "",
+  "mlUrl" : "https://eu-gb.ml.cloud.ibm.com",
+  "authUrl" : "https://iam.bluemix.net/identity/token",
+  "instanceId" : "6e95d0a5-2f87-40dc-a5f3-8de8a0666e90",
+  "apiKey" : null
+}

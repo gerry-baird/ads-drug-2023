@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Drug Selection Model">
+  <name>Drug-Selection-Model</name>
+  <uuid>fad4a603-3fb5-4769-9d9c-86d6573259c3</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#a1b43abf-256b-4fdf-aacf-9e4cca0a2676"/>
+  <targetRuleProject href="../../Drug%20Selection%20Model#58ce4521-7f88-4acd-9f93-318ce9c7520d"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
